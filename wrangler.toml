@@ -1,0 +1,13 @@
+name = "am-trojan"
+type = "javascript"
+compatibility_date = "2024-07-28"
+
+[build]
+upload = { "dir" = "./", "format" = "service-worker" }
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
+
+[env.production]
+compatibility_flags = ["nodejs_compat"]
